@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-#  <b>Fibonnaci Sequence</b>
+
 
 # In[18]:
 
@@ -13,7 +13,7 @@ def fibonnaci(n):
         return(fibonnaci(n-1) + fibonnaci(n-2))
 
 
-# <b>Euclid’s GCD Algorithm</b>
+
 
 # In[19]:
 
@@ -25,7 +25,7 @@ def gcd(a,b):
         return gcd(b,a%b)
 
 
-# <b>Recursive string Comparison</b>
+
 
 # In[20]:
 
@@ -39,4 +39,9 @@ def compareTo(s1, s2):
         return 0
     else:
         return compareTo(s1[1:], s2[1:])
+
+if __name__ == "__main__":
+    fibonnaci()
+    gcd()
+    compareTo()
 
