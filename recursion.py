@@ -43,14 +43,14 @@ gcd(60,48)
 
 
 def compareTo(s1, s2):
-    if str1[index] != str2[index]:
+    if s1[0]< s2[0]:
+        return -1
+    elif s1[0]> s2[0]:
         return 1
+    elif s1 == s2:
+        return 0
     else:
-        if the index exceeds the length of either string
-            return 0
-        else:
-            return recursive_string_comparison(str1, str2, index + 1)
-
+        return compareTo(s1[1:], s2[1:])
 
 # In[ ]:
 
